@@ -1,0 +1,20 @@
+name: Deploy to K3s Cluster
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      
+      - name: Configure kubectl
+        run: |
+          echo "${{ secrets.KUBE_CONFIG }}" | base64 -d > $HOME/.kube/config
+      
+      - name: Apply manifests
+        run: |
+          kubectl apply -f k8s-config/app-deployment.yaml
