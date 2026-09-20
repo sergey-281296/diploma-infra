@@ -43,3 +43,4 @@
 - 🏗️ [diploma-infra](https://github.com/sergey-281296/diploma-infra) — Terraform код инфраструктуры
 - ️ [diploma-k8s-config](https://github.com/sergey-281296/diploma-k8s-config) — Ansible playbooks и Helm values
 -  [diploma-app](https://github.com/sergey-281296/diploma-app) — Dockerfile и исходный код приложения
+
