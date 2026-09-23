@@ -8,7 +8,6 @@
 | `bootstrap/` | Создание сервисного аккаунта и S3 backend | [main.tf](bootstrap/main.tf) |
 | `main/` | Основная инфраструктура (VPC, ВМ, K3s) | [main.tf](main/main.tf), [backend.tf](main/backend.tf) |
 
-> ⚠️ **Важно:** Сначала применяется `bootstrap`, затем `main`. Секреты для backend хранятся в GitHub Secrets.
 
 ## Описание
 
