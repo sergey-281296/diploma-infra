@@ -8,9 +8,6 @@
 | `bootstrap/` | Создание сервисного аккаунта и S3 backend | [main.tf](bootstrap/main.tf) |
 | `main/` | Основная инфраструктура (VPC, ВМ, K3s) | [main.tf](main/main.tf), [backend.tf](main/backend.tf) |
 
-
-## Описание
-
 ## Описание
 В рамках дипломного проекта была спроектирована и развернута отказоустойчивая облачная инфраструктура в Yandex Cloud. Реализован полный цикл DevOps: от IaC (Terraform) до оркестрации (K3s), мониторинга (Prometheus/Grafana) и автоматизации доставки (CI/CD GitHub Actions).
 
